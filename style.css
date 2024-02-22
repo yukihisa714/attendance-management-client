@@ -1,0 +1,91 @@
+#calender {
+    margin: 0;
+    padding: 0;
+}
+
+#tabcontrol {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+/* ▼タブ */
+#tabcontrol a {
+    /* インラインブロック化 */
+    display: inline-block;
+    /* 下以外の枠線を引く */
+    border-width: 1px 1px 0px 1px;
+    /* 枠線の種類：実線 */
+    border-style: solid;
+    /* 枠線の色：黒色 */
+    border-color: black;
+    /* 枠線の左上角と右上角だけを丸く */
+    border-radius: 0.75em 0.75em 0 0;
+    /* 内側の余白 */
+    /* padding: 0.75em 1em; */
+    /* リンクの下線を消す */
+    text-decoration: none;
+    /* 文字色：黒色 */
+    color: black;
+    /* 背景色：白色 */
+    background-color: white;
+    /* 太字 */
+    font-weight: 4%;
+    text-align: center;
+    /* JavaScriptでz-indexを調整するために必要 */
+    position: relative;
+
+    width: 50%;
+    height: 30px;
+    line-height: 30px;
+}
+
+/* ▼タブにマウスポインタが載った際（任意） */
+#tabcontrol a:hover {
+    /* リンクの下線を引く */
+    text-decoration: underline;
+}
+
+/* ▼タブの中身 */
+#tabbody div {
+    /* 枠線：黒色の実線を1pxの太さで引く */
+    border: 1px solid black;
+    /* 上側にあるタブと1pxだけ重ねるために「-1px」を指定 */
+    margin-top: -1px;
+    /* 内側の余白量 */
+    padding: 1em;
+    /* 背景色：白色 */
+    background-color: white;
+    /* z-indexを調整するために必要 */
+    position: relative;
+    /* 重なり順序を「最も背面」にするため */
+    z-index: 0;
+}
+
+/* ▼タブの配色 */
+/* 1つ目のタブとその中身用の配色 */
+/* #tabcontrol a:nth-child(1),
+#tabbody div:nth-child(1) {
+    background-color: #ffffdd;
+} */
+
+/* 2つ目のタブとその中身用の配色 */
+/* #tabcontrol a:nth-child(2),
+#tabbody div:nth-child(2) {
+    background-color: #ddffdd;
+} */
+
+/* 3つ目のタブとその中身用の配色 */
+/* #tabcontrol a:nth-child(3),
+#tabbody div:nth-child(3) {
+    background-color: #ddddff;
+} */
+
+table {
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: solid 1px;
+}
