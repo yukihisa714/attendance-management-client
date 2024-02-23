@@ -1,3 +1,14 @@
+* {
+    font-size: 14px;
+}
+
+input {
+    /* margin: 0; */
+    /* padding: 0; */
+    /* size: 100%; */
+    transform: scale(1.6);
+}
+
 #calender {
     margin: 0;
     padding: 0;
@@ -41,13 +52,13 @@
 }
 
 /* ▼タブにマウスポインタが載った際（任意） */
-#tabcontrol a:hover {
-    /* リンクの下線を引く */
-    text-decoration: underline;
-}
+/* #tabcontrol a:hover { */
+/* リンクの下線を引く */
+/* text-decoration: underline; */
+/* } */
 
 /* ▼タブの中身 */
-#tabbody div {
+.tabpage {
     /* 枠線：黒色の実線を1pxの太さで引く */
     border: 1px solid black;
     /* 上側にあるタブと1pxだけ重ねるために「-1px」を指定 */
@@ -88,4 +99,27 @@ table {
 th,
 td {
     border: solid 1px;
+}
+
+table tr td:last-of-type {
+    border: 0;
+}
+
+
+.slider-group {
+    position: relative;
+    width: 100%;
+    min-height: 200px;
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.slider-card {
+    flex: 0 0 auto;
+    /* max-width: 150px; */
+    width: 80vw;
+    height: 100%;
+    margin-right: 20px;
 }
