@@ -94,6 +94,7 @@ input {
 
 table {
     border-collapse: collapse;
+    width: 100%;
 }
 
 th,
@@ -101,10 +102,13 @@ td {
     border: solid 1px;
 }
 
-table tr td:last-of-type {
+tr td:last-of-type {
     border: 0;
 }
 
+tr td:nth-of-type(4) {
+    /* display: flex; */
+}
 
 .slider-group {
     position: relative;
@@ -122,4 +126,10 @@ table tr td:last-of-type {
     width: 80vw;
     height: 100%;
     margin-right: 20px;
+}
+
+.day,
+.day-of-week {
+    padding: 0;
+    text-align: center;
 }
