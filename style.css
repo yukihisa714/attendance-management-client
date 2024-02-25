@@ -6,7 +6,9 @@ input {
     /* margin: 0; */
     /* padding: 0; */
     /* size: 100%; */
-    transform: scale(1.6);
+    transform: scale(3);
+    /* margin: 50%; */
+    vertical-align: middle;
 }
 
 #calender {
